@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+.box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #060A30;
+}
+.cont {
+    width: 250px;
+    height: 350px;
+    border-radius: 10%;
+    margin-top: 1.5rem;
+}
+.imgplane {
+    width: 100%;
+    height: 100%;
+    border-radius: 10% 10% 0 0;
+    object-fit: cover;
+    box-shadow: 0 0 0 0;
+    transition: 0.3s;
+}
+.imgplane:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10% 10% 0 0;
+    object-fit: cover;
+    box-shadow: 0 0 50px 15px #48abe0;
+}

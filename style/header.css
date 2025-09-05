@@ -1,0 +1,62 @@
+header {
+    height: 15rem;
+    background-color: #353358;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+header p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+}
+.p1 {
+    animation: slideleft 2s forwards;
+    opacity: 0;
+    animation-delay: 1s;
+}
+@keyframes slideleft {
+    to {
+        opacity: 1;
+    }
+}
+.p2 {
+    animation: slidecenter 2s forwards;
+    opacity: 0;
+    font-size: 7vw;
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: 
+      url("/image/fontBackground.jpeg");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+@keyframes slidecenter {
+    to {
+        opacity: 1;
+    }
+}
+.search {
+    border: 1px solid black;
+    background-color: rgb(91,118,209);
+    border-radius: 25px;
+    width: 300px;
+    height: 50px;
+    transition: 0.2s;
+    outline: none;
+    padding-left: 20px;
+}
+.search:focus {
+    border: 3px solid black;
+    background-color: rgb(170,178,229);
+    border-radius: 25px;
+    width: 300px;
+    height: 50px;
+}

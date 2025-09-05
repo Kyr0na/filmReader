@@ -546,11 +546,12 @@ let json = {
 for (let i = 0; i < json.items.length; i++) {
             let cont = document.createElement('div');
             let img = document.createElement('img');
+
             cont.className = 'cont';
+            img.className = 'imgplane';
             let response = json.items[i];
             
-            cont.innerText = response.nameRu;
-            img.src = response.posterUrl;
+            img.src = response.posterUrlPreview;
             
             box.appendChild(cont);
             cont.appendChild(img);
